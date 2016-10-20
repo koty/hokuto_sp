@@ -99,7 +99,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\hokuto_sp\hokuto_sp.csproj">
-      <Name>hokuto_sp</Name>
+      <Name>hokuto_smp</Name>
       <Project>{B6D7763B-4DA3-4167-B09A-CE65A5F5D342}</Project>
     </ProjectReference>
   </ItemGroup>

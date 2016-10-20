@@ -5,7 +5,7 @@
 		<ListView x:Name="list" ItemsSource="{Binding Recs}">
 			<ListView.ItemTemplate>
 		    	<DataTemplate>
-		      		<TextCell Text="{Binding Name}" Detail="{Binding Name}" />
+		      		<TextCell Text="{Binding date}" Detail="{Binding subject}" />
 		    	</DataTemplate>
 		  	</ListView.ItemTemplate>
 		</ListView>
