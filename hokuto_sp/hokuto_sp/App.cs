@@ -17,18 +17,13 @@ namespace hokuto_sp
 			// The root page of your application
         }
 
-        protected override async void OnStart()
+        protected override void OnStart()
         {
             // Handle when your app starts
 			var mainPage = new MainPage();
 			var vm = new MainPageViewModel();
 			mainPage.BindingContext = vm;
 			MainPage = mainPage;
-			var client = new HttpClient();
-			var json = await client.GetStringAsync("https://b-sw.co/hokuto/hokuto.json");
-			var o = JsonConvert.DeserializeObject<Envelope>(json);
-			vm.Recs = new ObservableCollection<ScheduleRec>(o.results);
-			vm.MyName = "こんにちは。2";
         }
 
         protected override void OnSleep()
